@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box; /* Помогает центрировать элементы */
+}
+
+#container {
+    border: solid 1px black;
+    border-radius: 9px;
+    padding: 25px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    margin: 0 auto; /* В связке с этими свойствами */
+    width: 100%; /* этим */
+    max-width: 200px; /* и этим */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    filter: invert(60%);
+    mix-blend-mode: difference;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.inputs > input {
+    margin: 5px;
+}
+
+#result {
+    margin: 20px 10px;
+    text-align: center;
+}
